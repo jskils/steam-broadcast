@@ -10,21 +10,19 @@ from my_fake_useragent import UserAgent
 logging.basicConfig(filename='steam_bot.log', level=logging.INFO,
                     format='%(asctime)s - %(threadName)s - %(levelname)s : %(message)s')
 
-# steam api
-STEAM_API_URL = "https://api.steampowered.com"
-# steam 社区
-STEAM_COMMUNITY_URL = "https://steamcommunity.com"
 # 直播间ID
 STEAM_ID = "76561199476796290"
-
 # 每个观众心跳次数，30s/次
 HEARTBEAT_COUNT = 30
 # 伪装的观众数量
 VIEWER_COUNT = 200
-# 需达到的总观众数
-TOTAL_VIEWER_COUNT = 2500
 # 当前观众数
 CURREN_VIEWER_COUNT = 0
+
+# steam api
+STEAM_API_URL = "https://api.steampowered.com"
+# steam 社区
+STEAM_COMMUNITY_URL = "https://steamcommunity.com"
 
 
 # 进入直播间并获取session_id
